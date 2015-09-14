@@ -1,0 +1,27 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '7.0'
+
+target 'Concrete' do
+
+pod 'AFNetworking', '~> 2.5'
+pod 'Mantle', '~> 2.0.2'
+pod 'UIScrollView-InfiniteScroll'
+pod 'ReactiveCocoa'
+pod 'BSErrorMessageView', :git => 'https://github.com/BenjaminSarkisyan/BSErrorMessageView.git'
+pod 'SDWebImage', '~>3.7'
+pod "FBSDKCoreKit";
+pod "FBSDKLoginKit";
+pod "FBSDKShareKit";
+pod "FBSDKMessengerShareKit";
+pod 'LGSideMenuController', '~> 1.0.0'
+pod 'SKSplashView'
+pod 'XHRealTimeBlur'
+pod 'Parse'
+
+
+end
+
+target 'ConcreteTests' do
+
+end
+

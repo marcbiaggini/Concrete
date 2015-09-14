@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArtistaCell" rowHeight="50" id="KGk-i7-Jjw" customClass="ArtistaTableViewCell">
+            <rect key="frame" x="0.0" y="1" width="320" height="245"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="artista" translatesAutoresizingMaskIntoConstraints="NO" id="xS6-aj-WKS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="238"/>
+                    </imageView>
+                    <view alpha="0.69999999999999973" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DLd-1E-WJN">
+                        <rect key="frame" x="0.0" y="208" width="320" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="End of a Era" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rT8-Ry-qpH">
+                                <rect key="frame" x="8" y="3" width="158" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ErP-i5-D3g">
+                                <rect key="frame" x="286" y="4" width="20" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="He7-xG-xti" userLabel="playButton">
+                                <rect key="frame" x="253" y="5" width="20" height="20"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" alpha="0.64999999999999969" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emptyHeart" translatesAutoresizingMaskIntoConstraints="NO" id="jbQ-KC-dLl">
+                                <rect key="frame" x="253" y="5" width="20" height="20"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="JYn-Qg-a4u"/>
+                                    <constraint firstAttribute="width" constant="20" id="ccY-ix-48J"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="He7-xG-xti" firstAttribute="centerY" secondItem="jbQ-KC-dLl" secondAttribute="centerY" id="ICG-BD-rcN"/>
+                            <constraint firstItem="jbQ-KC-dLl" firstAttribute="top" secondItem="DLd-1E-WJN" secondAttribute="top" constant="5" id="KX5-qi-AOf"/>
+                            <constraint firstItem="ErP-i5-D3g" firstAttribute="leading" secondItem="jbQ-KC-dLl" secondAttribute="trailing" constant="13" id="TTa-hO-u4Z"/>
+                            <constraint firstItem="He7-xG-xti" firstAttribute="height" secondItem="jbQ-KC-dLl" secondAttribute="height" id="bGE-Eg-6US"/>
+                            <constraint firstItem="He7-xG-xti" firstAttribute="centerX" secondItem="jbQ-KC-dLl" secondAttribute="centerX" id="bgW-1F-XTm"/>
+                            <constraint firstItem="ErP-i5-D3g" firstAttribute="top" secondItem="DLd-1E-WJN" secondAttribute="top" constant="4" id="oy8-Mr-Qah"/>
+                            <constraint firstAttribute="trailing" secondItem="ErP-i5-D3g" secondAttribute="trailing" constant="14" id="vKt-6S-jXC"/>
+                            <constraint firstItem="He7-xG-xti" firstAttribute="width" secondItem="jbQ-KC-dLl" secondAttribute="width" id="x7X-IR-qEj"/>
+                            <constraint firstAttribute="height" constant="30" id="zNc-tS-qjb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DLd-1E-WJN" firstAttribute="leading" secondItem="xS6-aj-WKS" secondAttribute="trailing" constant="-320" id="6cy-0B-7I9"/>
+                    <constraint firstItem="xS6-aj-WKS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="CZf-mN-HV6"/>
+                    <constraint firstItem="DLd-1E-WJN" firstAttribute="top" secondItem="xS6-aj-WKS" secondAttribute="bottom" constant="-30" id="DLv-Wz-lWP"/>
+                    <constraint firstItem="DLd-1E-WJN" firstAttribute="centerX" secondItem="xS6-aj-WKS" secondAttribute="centerX" id="Smz-rs-nJx"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="xS6-aj-WKS" secondAttribute="trailing" constant="-8" id="Wb8-n5-W47"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="xS6-aj-WKS" secondAttribute="bottom" constant="-1.5" id="bLd-A7-p8H"/>
+                    <constraint firstItem="DLd-1E-WJN" firstAttribute="width" secondItem="xS6-aj-WKS" secondAttribute="width" id="jXa-jU-2vX"/>
+                    <constraint firstItem="xS6-aj-WKS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="jlN-fX-a7w"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="artistaImage" destination="xS6-aj-WKS" id="IBw-T8-YBl"/>
+                <outlet property="artistaTitle" destination="rT8-Ry-qpH" id="KTs-vU-CAw"/>
+                <outlet property="artistaViewCounter" destination="ErP-i5-D3g" id="CQ8-Bt-tAI"/>
+                <outlet property="faixaInferior" destination="DLd-1E-WJN" id="f8f-NB-AB7"/>
+                <outlet property="heart" destination="jbQ-KC-dLl" id="J5A-ie-6pH"/>
+                <outlet property="heartButton" destination="He7-xG-xti" id="hEv-9V-oH1"/>
+            </connections>
+            <point key="canvasLocation" x="341" y="273.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="artista" width="400" height="400"/>
+        <image name="emptyHeart" width="260" height="260"/>
+    </resources>
+</document>
